@@ -1,0 +1,256 @@
+.profile-page {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+}
+
+.menu {
+  width: 10rem; /* Mantém a largura do menu */
+  background-color: #e6e7ff;
+  padding: 2rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.logo-aelin {
+  width: 70px;  /* Ajuste a largura da logo */
+  height: 70px; /* Ajuste a altura da logo */
+  margin-bottom: 2rem; /* Espaçamento abaixo do logo */
+  margin-left: 2rem;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center; /* Alinha verticalmente o ícone e o texto */
+  gap: 0.5rem; /* Espaçamento entre ícone e texto */
+  color: #6b46c1;
+  margin-bottom: 1rem; /* Espaçamento entre os itens do menu */
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  color: #5a31b8; /* Cor ao passar o mouse */
+}
+
+.menu-icon {
+  display: flex;          /* Contêiner flexível */
+  flex-direction: column; /* Alinha os itens verticalmente */
+  gap: 1rem;             /* Espaçamento entre os ícones */
+  padding: 0;            /* Remover padding para evitar espaçamento excessivo */
+}
+
+.menu-label {
+  color: #6b46c1; /* Cor do texto para combinar com os ícones */
+  font-size: 0.9rem;
+}
+
+.content {
+  flex: 1; /* Permite que o conteúdo ocupe o restante do espaço */
+  padding: 1rem; /* Espaçamento interno do conteúdo */
+}
+
+.profile-card {
+  max-width: 40rem;
+  margin: 0 auto; /* Centraliza horizontalmente o cartão de perfil */
+  background-color: white;
+  border-radius: 0.9rem;
+  padding: 2rem; /* Espaçamento interno do cartão */
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
+  
+  /* Centralizando conteúdo */
+  display: flex;
+  flex-direction: column; /* Coloca os itens em coluna */
+  align-items: center; /* Alinha os itens no centro horizontalmente */
+  justify-content: center; /* Centraliza verticalmente */
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-avatar {
+  width: 6rem;
+  height: 6rem;
+  color: #6b46c1;
+  margin-right: 1rem;
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6b46c1;
+  margin-bottom: 1%;
+}
+
+.profile-date {
+  color: #718096;
+  font-size: 0.9rem;
+  margin-top: 1%;
+}
+
+.profile-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  gap: 2rem;
+}
+
+.stats-item {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.stats-number {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #6b46c1;
+  margin-bottom: 0.5rem;
+  
+}
+
+.stats-label {
+  color: #718096;
+  margin-top: 0.5rem;
+  margin-bottom: 1.9rem;
+}
+
+.card-description-stats{
+  background-color: #fff;
+  border-radius: 6rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  padding: 1rem;  /* Um pouco mais de espaço interno */
+  display: flex;
+  align-items: center; /* Alinha os itens ao centro verticalmente */
+  width: 20rem;  /* Largura do card */
+  height: 2rem;
+
+
+}
+.stats-description{
+  font-size: 0.9rem;
+  color: #6b46c1;
+}
+.saved-news,  .favorite-communities {
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #6b46c1;
+  margin-bottom: 0.5rem;
+}
+
+.news-list, .posts-list {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.news-image, .post-image {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.communities-list {
+  background-color: #d6cbf3;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  width: 95%;
+  align-items: center;
+}
+
+.community-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.community-item:last-child {
+  margin-bottom: 0;
+}
+
+.community-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.community-name {
+  color: #6b46c1;
+  align-items: center;
+}
+/* Card Container */
+.card {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 10rem; /* Limite da largura do card */
+  margin-bottom: 1rem; /* Espaço entre os cards */
+}
+
+.card-comunities {
+  background-color: #fff;
+  border-radius: 6rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;  /* Um pouco mais de espaço interno */
+  display: flex;
+  align-items: center; /* Alinha os itens ao centro verticalmente */
+  width: 20rem;  /* Largura do card */
+  margin-bottom: 1rem; /* Espaço entre os cards */
+}
+.card-description {
+  font-size: 0.85rem; /* Ajuste o tamanho da fonte conforme necessário */
+  color: #5a31b8; /* Cor do texto da descrição */
+  margin-top: 0.5rem; /* Espaçamento acima da descrição */
+  text-align: center; /* Centraliza o texto */
+}
+
+.comunities-image {
+  width: 20%; /* Ocupa 20% da largura do card */
+  height: 40px; /* Ajusta automaticamente a altura mantendo a proporção */
+  border-radius: 6rem; /* Borda arredondada */
+  margin-right: 1rem; /* Espaçamento entre a imagem e a descrição */
+}
+.card-description-comuni {
+  font-size: 0.85rem;
+  color: #5a31b8;
+  text-align: center;
+
+}
+.community-icon {
+  width: 3rem; /* Ajusta o tamanho do ícone */
+  height: 3rem;
+  margin-bottom: 0.5rem;
+}
+.news-image{
+  width: 100%; /* Ajusta a largura para ocupar todo o card */
+  height: auto;
+  border-radius: 0.5rem;
+}
+.community-name {
+  color: #6b46c1;
+  font-size: 0.9rem;
+  text-align: center; /* Centraliza o texto */
+  margin-top: 0.7rem;
+}
+
+.news-list{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap; /* Para que os cards possam quebrar linha se necessário */
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #6b46c1;
+  margin-bottom: 0.5rem;
+}
