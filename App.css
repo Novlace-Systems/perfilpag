@@ -5,7 +5,7 @@
 }
 
 .menu {
-  width: 10rem; /* Mantém a largura do menu */
+  width: 4rem; /* Mantém a largura do menu */
   background-color: #e6e7ff;
   padding: 2rem;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
@@ -15,7 +15,7 @@
   width: 70px;  /* Ajuste a largura da logo */
   height: 70px; /* Ajuste a altura da logo */
   margin-bottom: 2rem; /* Espaçamento abaixo do logo */
-  margin-left: 2rem;
+  margin-left: 0.1rem;
 }
 
 .menu-item {
@@ -36,12 +36,9 @@
   flex-direction: column; /* Alinha os itens verticalmente */
   gap: 1rem;             /* Espaçamento entre os ícones */
   padding: 0;            /* Remover padding para evitar espaçamento excessivo */
+  margin-left: 1rem;
 }
 
-.menu-label {
-  color: #6b46c1; /* Cor do texto para combinar com os ícones */
-  font-size: 0.9rem;
-}
 
 .content {
   flex: 1; /* Permite que o conteúdo ocupe o restante do espaço */
@@ -61,12 +58,6 @@
   flex-direction: column; /* Coloca os itens em coluna */
   align-items: center; /* Alinha os itens no centro horizontalmente */
   justify-content: center; /* Centraliza verticalmente */
-}
-
-.profile-info {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1.5rem;
 }
 
 .profile-avatar {
@@ -96,44 +87,23 @@
   gap: 2rem;
 }
 
-.stats-item {
-  text-align: center;
-  margin-top: 0.5rem;
-}
-
-.stats-number {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #6b46c1;
-  margin-bottom: 0.5rem;
-  
-}
-
-.stats-label {
-  color: #718096;
-  margin-top: 0.5rem;
-  margin-bottom: 1.9rem;
-}
 
 .card-description-stats{
   background-color: #fff;
   border-radius: 6rem;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
-  padding: 1rem;  /* Um pouco mais de espaço interno */
+  padding: 1.5rem;  /* Um pouco mais de espaço interno */
   display: flex;
   align-items: center; /* Alinha os itens ao centro verticalmente */
-  width: 20rem;  /* Largura do card */
+  width: 19rem;  /* Largura do card */
   height: 2rem;
-
-
+margin-bottom: 3rem;
 }
 .stats-description{
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #6b46c1;
 }
-.saved-news,  .favorite-communities {
-  margin-bottom: 1.5rem;
-}
+
 
 .section-title {
   font-size: 1.25rem;
@@ -142,17 +112,6 @@
   margin-bottom: 0.5rem;
 }
 
-.news-list, .posts-list {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.news-image, .post-image {
-  width: 6rem;
-  height: 6rem;
-  object-fit: cover;
-  border-radius: 0.25rem;
-}
 
 .communities-list {
   background-color: #d6cbf3;
@@ -213,12 +172,7 @@
   text-align: center; /* Centraliza o texto */
 }
 
-.comunities-image {
-  width: 20%; /* Ocupa 20% da largura do card */
-  height: 40px; /* Ajusta automaticamente a altura mantendo a proporção */
-  border-radius: 6rem; /* Borda arredondada */
-  margin-right: 1rem; /* Espaçamento entre a imagem e a descrição */
-}
+
 .card-description-comuni {
   font-size: 0.85rem;
   color: #5a31b8;
@@ -230,22 +184,21 @@
   height: 3rem;
   margin-bottom: 0.5rem;
 }
-.news-image{
-  width: 100%; /* Ajusta a largura para ocupar todo o card */
-  height: auto;
-  border-radius: 0.5rem;
-}
-.community-name {
+
+.comunity-title {
   color: #6b46c1;
-  font-size: 0.9rem;
+  font-weight: bold;
+  font-size: 1rem;
   text-align: center; /* Centraliza o texto */
-  margin-top: 0.7rem;
+  margin-top: 0.5rem;
+  margin-bottom: 9rem;
 }
 
-.news-list{
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap; /* Para que os cards possam quebrar linha se necessário */
+.community-name {
+  color: #6b46c1;
+  font-size: 0.7rem;
+  text-align: center; /* Centraliza o texto */
+  margin-top: 0.5rem;
 }
 
 .section-title {
