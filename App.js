@@ -1,16 +1,8 @@
 import React from 'react';
-import './App.css'; // Importa o arquivo CSS
-import { HouseIcon, MessageCircleHeart, MessageCircle, Settings, User, Star } from 'lucide-react';
-
-const MenuItem = ({ imageSrc, label }) => (
-  <div className="menu-item">
-    <img src={imageSrc} alt={label} className="menu-icon" />
-    <span>{label}</span>
-  </div>
-);
+import './App.css';
+import { HouseIcon, MessageCircleHeart, User, Star } from 'lucide-react';
 
 const ProfilePage = () => {
-
   const favoriteCommunities = [
     { id: 1, name: 'Casa Da Mulher', imageSrc: 'casadamulher.jpg' },
     { id: 2, name: 'Mulheres na Tecnologia', imageSrc: 'tecm.png' },
@@ -20,31 +12,24 @@ const ProfilePage = () => {
   return (
     <div className="profile-page">
       {/* Left Menu */}
-      
       <div className="menu">
-  <div className="logo-aelin">
-    <img src='logoaelin.png' style={{ width: '70px', height: '70px' }} />
-  </div>
+        <div className="logo-aelin">
+          <img src="logoaelin.png" style={{ width: '70px', height: '70px' }} alt="Logo Aelin" />
+        </div>
 
-  <div className='menu-icon'>
-    <div className="menu-item">
-      <HouseIcon color='#6b46c1' label="Home" />
-      <span className="menu-label" />
-    </div>
-    <div className="menu-item">
-      <MessageCircleHeart color='#6b46c1' label="Comunidades" />
-      <span className="menu-label"/>
-    </div>
-    <div className="menu-item">
-      <MessageCircle color='#6b46c1' label="Psicólogo" />
-      <span className="menu-label"/>
-    </div>
-    <div className="menu-item">
-      <Settings color='#6b46c1' label="Configurações" />
-      <span className="menu-label"/>
-    </div>
-  </div>
-</div>
+        {/* Menu Items */}
+        <div className="menu-items">
+          <button className="menu-button">
+            <HouseIcon className="icon-menu" />
+          </button>
+          <button className="menu-button">
+            <MessageCircleHeart className="icon-menu" />
+          </button>
+          <button className="menu-button-active">
+            <User className="user-icon" />
+          </button>
+        </div>
+      </div>
 
       {/* Main Content */}
       <div className="content">
@@ -54,25 +39,29 @@ const ProfilePage = () => {
             <div>
               <h1 className="profile-name">Ana Sophia Batista</h1>
               <p className="profile-date">Desde 2019</p>
-              <div className='card-description-stats'>
-              <p className="stats-description">Gosto de animais, pricipalmente cachorrinhos.</p>
-            </div>
             </div>
           </div>
 
-<div className="favorite-communities">
-  <div className="communities-list">
+          {/* Lista de comunidades favoritas */}
+          <div className="communities-list">
+            <div className="favorite-communities">
+              <div className="communities-header">
+                <Star className="star-icon" color="#6b46c1" />
+                <h2 className="community-title">Comunidades Favoritas</h2>
+              </div>
 
-  <Star color='#6b46c1' label="Comunidades Favoritas" /><span className='comunity-title'>Comunidades Favoritas</span>
-    {favoriteCommunities.map((community) => (
-      <div key={community.id} className="card-comunities">
-        <img src={community.imageSrc} alt={community.name} className="comunities-image" />
-        <span className="community-name">{community.name}</span>
-        <p className="card-description-comuni">{community.description}</p>
-      </div>
-    ))}
-  </div>
-</div>
+              {favoriteCommunities.map((community) => (
+                <button 
+                  style={{borderColor: '#6b46c1'}}
+                  key={community.id}
+                  className="card-comunities"
+                >
+                  <User color="#6b46c1" className="community-icon" />
+                  <span className="community-name">{community.name}</span>
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
