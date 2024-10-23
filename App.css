@@ -1,209 +1,145 @@
 .profile-page {
-  background-color: white;
+  background-color: #e6e7ff;
   min-height: 100vh;
   display: flex;
 }
 
 .menu {
-  width: 4rem; /* Mantém a largura do menu */
+  width: 4rem;
   background-color: #e6e7ff;
   padding: 2rem;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
 }
 
 .logo-aelin {
-  width: 70px;  /* Ajuste a largura da logo */
-  height: 70px; /* Ajuste a altura da logo */
-  margin-bottom: 2rem; /* Espaçamento abaixo do logo */
-  margin-left: 0.1rem;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 1rem;
+  margin-top: 6rem;
 }
 
-.menu-item {
+.menu-items {
   display: flex;
-  align-items: center; /* Alinha verticalmente o ícone e o texto */
-  gap: 0.5rem; /* Espaçamento entre ícone e texto */
-  color: #6b46c1;
-  margin-bottom: 1rem; /* Espaçamento entre os itens do menu */
-  cursor: pointer;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 3rem;
 }
 
-.menu-item:hover {
-  color: #5a31b8; /* Cor ao passar o mouse */
+.menu-button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  background-color: transparent;
+  border: none;
 }
 
-.menu-icon {
-  display: flex;          /* Contêiner flexível */
-  flex-direction: column; /* Alinha os itens verticalmente */
-  gap: 1rem;             /* Espaçamento entre os ícones */
-  padding: 0;            /* Remover padding para evitar espaçamento excessivo */
-  margin-left: 1rem;
+.menu-button:hover {
+  background-color: #330066;
 }
 
+.menu-button-active {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  background-color: #330066;
+  border: none;
+}
 
 .content {
-  flex: 1; /* Permite que o conteúdo ocupe o restante do espaço */
-  padding: 1rem; /* Espaçamento interno do conteúdo */
+  flex: 1;
+  padding: 1rem;
 }
 
 .profile-card {
   max-width: 40rem;
-  margin: 0 auto; /* Centraliza horizontalmente o cartão de perfil */
+  margin: 0 auto;
   background-color: white;
-  border-radius: 0.9rem;
-  padding: 2rem; /* Espaçamento interno do cartão */
+  border-radius: 3rem;
+  padding: 2rem;
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
-  
-  /* Centralizando conteúdo */
   display: flex;
-  flex-direction: column; /* Coloca os itens em coluna */
-  align-items: center; /* Alinha os itens no centro horizontalmente */
-  justify-content: center; /* Centraliza verticalmente */
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .profile-avatar {
   width: 6rem;
   height: 6rem;
-  color: #6b46c1;
-  margin-right: 1rem;
+  margin-bottom: 2rem;
 }
 
 .profile-name {
   font-size: 1.5rem;
   font-weight: bold;
   color: #6b46c1;
-  margin-bottom: 1%;
 }
 
 .profile-date {
   color: #718096;
   font-size: 0.9rem;
-  margin-top: 1%;
 }
 
-.profile-stats {
+.favorite-communities {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.communities-header {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 1.5rem;
-  gap: 2rem;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-
-.card-description-stats{
-  background-color: #fff;
-  border-radius: 6rem;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;  /* Um pouco mais de espaço interno */
-  display: flex;
-  align-items: center; /* Alinha os itens ao centro verticalmente */
-  width: 19rem;  /* Largura do card */
-  height: 2rem;
-margin-bottom: 3rem;
-}
-.stats-description{
-  font-size: 0.8rem;
+.community-title {
   color: #6b46c1;
-}
-
-
-.section-title {
-  font-size: 1.25rem;
   font-weight: bold;
-  color: #6b46c1;
-  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
 }
-
 
 .communities-list {
   background-color: #d6cbf3;
   border-radius: 1.5rem;
-  padding: 1rem;
-  width: 95%;
-  align-items: center;
+  padding: 2rem;
+  width: 70%;
+  margin-top: 1rem;
 }
 
-.community-item {
+.card-comunities {
+  background-color: #fff;
+  border-radius: 3rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
   display: flex;
   align-items: center;
-  margin-bottom: 0.5rem;
+  width: 20rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
 }
 
-.community-item:last-child {
-  margin-bottom: 0;
+.community-name {
+  color: #6b46c1;
+  font-size: 0.85rem;
 }
 
 .community-icon {
   width: 1.5rem;
   height: 1.5rem;
-  margin-right: 0.5rem;
-}
-
-.community-name {
-  color: #6b46c1;
-  align-items: center;
-}
-/* Card Container */
-.card {
-  background-color: #fff;
-  border-radius: 1rem;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
-  padding: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 10rem; /* Limite da largura do card */
-  margin-bottom: 1rem; /* Espaço entre os cards */
-}
-
-.card-comunities {
-  background-color: #fff;
-  border-radius: 6rem;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
-  padding: 0.5rem;  /* Um pouco mais de espaço interno */
-  display: flex;
-  align-items: center; /* Alinha os itens ao centro verticalmente */
-  width: 20rem;  /* Largura do card */
-  margin-bottom: 1rem; /* Espaço entre os cards */
-}
-.card-description {
-  font-size: 0.85rem; /* Ajuste o tamanho da fonte conforme necessário */
-  color: #5a31b8; /* Cor do texto da descrição */
-  margin-top: 0.5rem; /* Espaçamento acima da descrição */
-  text-align: center; /* Centraliza o texto */
-}
-
-
-.card-description-comuni {
-  font-size: 0.85rem;
-  color: #5a31b8;
-  text-align: center;
-
-}
-.community-icon {
-  width: 3rem; /* Ajusta o tamanho do ícone */
-  height: 3rem;
-  margin-bottom: 0.5rem;
-}
-
-.comunity-title {
-  color: #6b46c1;
-  font-weight: bold;
-  font-size: 1rem;
-  text-align: center; /* Centraliza o texto */
-  margin-top: 0.5rem;
-  margin-bottom: 9rem;
-}
-
-.community-name {
-  color: #6b46c1;
-  font-size: 0.7rem;
-  text-align: center; /* Centraliza o texto */
-  margin-top: 0.5rem;
-}
-
-.section-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #6b46c1;
-  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
